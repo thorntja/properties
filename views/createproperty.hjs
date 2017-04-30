@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' / />
+  </head>
+  <body>
+    <h1>Create Property</h1>
+    <form action="/api/property" method="post">
+      <input type="text" name="address" placeholder="Address"/><br />
+      <input type="text" name="description" placeholder="Description"/><br />
+      <input type="number" name="br" placeholder="Bedrooms"/><br />
+      <input type="number" name="ba" placeholder="Bathrooms"/><br />
+      <input type="number" name="rent" placeholder="Rent"/><br />
+      <label for="pet">Pet</label>
+      <select>
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+      </select>
+      <label for="Smoking">Smoking</label>
+      <select>
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+      </select>
+      <input type="text" name="img" placeholder="Image"/><br />
+      <input type="submit" value="Add Property" />
+    </form>
+  </body>
+</html>
